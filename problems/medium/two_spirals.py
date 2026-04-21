@@ -30,14 +30,11 @@ def generate_two_spirals(n_samples=1000, noise=0.2):
     return df
 
 
-# Dataset generieren
 df = generate_two_spirals()
 
-# CSV speichern
 df.to_csv("two_spirals.csv", index=False)
 print("Saved two_spirals.csv")
 
-# PNG erzeugen
 plt.figure(figsize=(8, 8))
 plt.scatter(
     df['x'],
